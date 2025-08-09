@@ -1,0 +1,59 @@
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --primary: #1e90ff;
+  }
+  
+  [data-theme="dark"] {
+    --bg: #111111;
+    --text: #ffffff;
+    --primary: #00bfff;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+  }
+  
+  .header, .footer, .hero, .features, .testimonials, .pricing, .cta {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .card {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+  }
+  
+  .cta-btn {
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .feature-grid, .pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-grid, .pricing-grid {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 90%;
+      margin: 1rem auto;
+    }
+  }
+  
